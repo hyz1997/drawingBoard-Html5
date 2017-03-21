@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>结合使用Canvas与History API</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style type="text/css">
+        .imgChange {
+        	float: left;
+        	width: 150px;
+        }
+        .imgChange li {
+        	list-style-type: none;
+        	
+        }
+        .imgChange li img{
+        	width: 100px;
+        	height: 100px;
+        }
+        .main {
+        	float: left;
+        	margin: 0 auto;
+        	
+        }
+
+        #canvas {
+        	width: 500px;
+        	height: 400px;
+        	
+        	background-image: url(img/bg1.jpg);
+        }
+        #color li {
+        	width: 60px;
+        	height: 60px;
+        	display: inline-block;
+        	list-style-type: none;
+        	border-bottom-left-radius: 30%;
+        	border-bottom-right-radius: 30%; 
+        }
+        #size li{
+        	list-style-type: none;
+        	display: inline-block;
+        	border: 1px solid #000;
+        }
+        .red {
+        	background: red;
+        }
+        .orange {
+        	background: orange;
+        }
+        .yellow {
+        	background: yellow;
+        }
+        .green {
+        	background: #29F031;
+        }
+        .blue {
+        	background: #29BFF0;
+        }
+        .white {
+        	background: white;
+        	border: 1px #000 solid;
+        	border-radius: 30% !important;
+        }
+        .purple {
+        	background: #7F3E98;
+        }
+        .size1 {
+            width: 10px;
+            height: 10px;
+        }
+        .size2 {
+        	width: 20px;
+        	height: 20px;
+        }
+        .size3 {
+        	width: 30px;
+        	height: 30px;
+        }
+	</style>
+</head>
+<body>
+<div class="imgChange">
+	<ul>
+		<li>
+			<img src="img/bg1.jpg">
+		</li>
+		<li>
+			<img src="img/bg2.jpg">
+		</li>
+		<li>
+			<img src="img/bg3.jpg">
+		</li>
+		<li>
+			<img src="img/bg4.jpg">
+		</li>
+	</ul>
+</div>
+<div class="main">
+	<canvas id="canvas" >
+	
+	</canvas>
+	<ul id="color">
+		<li class="red"></li>
+		<li class="orange"></li>
+		<li class="yellow"></li>
+		<li class="green"></li>
+		<li class="blue"></li>
+		<li class="purple"></li>
+		<li class="white"></li>
+	</ul>
+	画笔大小：
+	<ul id="size">
+		<li class="size1"></li>
+		<li class="size2"></li>
+		<li class="size3"></li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/huaban.js">
+
+</script>
+</body>
+</html>
